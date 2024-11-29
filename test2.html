@@ -1,174 +1,102 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV của Ngô Trọng Tín</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Nhà hàng của chúng tôi - nơi bạn tận hưởng ẩm thực tinh tế và không gian ấm cúng.">
+    <title>Nhà hàng của chúng tôi</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
             margin: 0;
-            padding: 20px;
-            color: #333;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40;
         }
-        .container {
-            max-width: 800px;
+        header {
+            background-color: #6c757d;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #495057;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
             margin: 0 auto;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1 {
+        .hero {
             text-align: center;
-            color: #2c3e50;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 10px;
+            margin-bottom: 30px;
         }
-        h2, h3 {
-            color: #2980b9;
-            margin-top: 20px;
+        .hero img {
+            max-width: 100%;
+            border-radius: 10px;
         }
-        p, li {
-            line-height: 1.6;
+        .about, .menu, .contact {
+            margin-bottom: 30px;
         }
-        ul {
-            list-style-type: none; /* Xóa dấu chấm */
-            margin-left: 0;
-            padding-left: 0;
-        }
-        .contact-info {
+        footer {
+            background-color: #343a40;
+            color: white;
             text-align: center;
-            margin-bottom: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .profile-img {
-            border-radius: 1cap; /* Hình ảnh tròn */
-            width: 100px; /* Chiều rộng hình ảnh */
-            height: 100px; /* Chiều cao hình ảnh */
-            object-fit: cover; /* Đảm bảo hình ảnh không bị biến dạng */
-            margin-right: 20px; /* Thêm khoảng cách bên phải hình ảnh */
-        }
-
-        .section {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background: #f9f9f9;
-        }
-        .icon {
-            margin-right: 10px;
-            color: #2980b9;
-        }
-        .skills li {
-            display: flex;
-            align-items: center;
-        }
-
-        .presentation {
-            display: flex; /* Sử dụng Flexbox */
-            align-items: center; /* Căn giữa theo chiều dọc */
-            justify-content: start; /* Tạo khoảng cách giữa các phần tử */
-            margin-bottom: 20px; /* Thêm khoảng cách dưới */
-            gap: 50px;
-        }
-
-        .avatar{
-            display: flex;
-            flex-direction: column;
-            margin-top: 20px;
-            margin-left: 40px;
-        }
-        .no-margin{
-            margin: 0px;
+            padding: 10px 0;
         }
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <div class="presentation">
-            <div class="avatar">
-                <img src="images/ime.jpg" alt="[Tên đầy đủ]" class="profile-img">
-                <h3 style="width: max-content;">Ngô Trọng Tín</h3>
-            </div>
-            <div class="contact-info">
-                <p class="no-margin"><i class="fas fa-map-marker-alt icon"></i>Địa chỉ: Tp Nha Trang, Khánh Hoà </p>
-                <p class="no-margin"><i class="fas fa-phone-alt icon"></i>SDT: 0339144280 </p>
-                <p class="no-margin"><i class="fas fa-envelope icon"></i>Email: tinzdev986@gmail.com</p>
-                <p class="no-margin"><i class="fab fa-github icon"></i>GitHub: <a href="https://github.com/ngotrongtin">link</a></p>
-            </div>
+    <header>
+        <h1>Nhà Hàng Tinh Hoa Ẩm Thực</h1>
+        <p>Địa điểm lý tưởng cho những bữa ăn đáng nhớ</p>
+    </header>
+    <nav>
+        <a href="#about">Giới thiệu</a>
+        <a href="#menu">Thực đơn</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+    <section>
+        <div class="hero">
+            <img src="images/brand.jpg" alt="Không gian nhà hàng">
+            <h2>Chào mừng đến với Nhà Hàng Tinh Hoa Ẩm Thực</h2>
+            <p>Chúng tôi mang đến cho bạn trải nghiệm ẩm thực tuyệt vời với các món ăn độc đáo và không gian ấm cúng.</p>
         </div>
-        
-
-        <div class="section">
-            <h2>Tóm tắt nghề nghiệp</h2>
-            <p>Sinh viên ngành Công nghệ thông tin với kinh nghiệm lập trình sử dụng Ruby on Rails và C++. Đã thực hiện nhiều dự án cá nhân bao gồm phát triển ứng dụng web tích hợp Stripe API và OmniAuth, cùng với các dự án lập trình nhúng và game. Đam mê công nghệ và mong muốn tìm kiếm cơ hội thực tập hoặc làm việc trong môi trường phát triển phần mềm.</p>
+        <div id="about" class="about">
+            <h2>Về chúng tôi</h2>
+            <p>Nhà hàng của chúng tôi nổi tiếng với các món ăn được chế biến từ nguyên liệu tươi ngon nhất, kết hợp cùng tay nghề tinh tế của đội ngũ đầu bếp chuyên nghiệp. Hãy đến để thưởng thức và cảm nhận sự khác biệt.</p>
         </div>
-
-        <div class="section">
-            <h2>Kỹ năng</h2>
-            <ul class="skills">
-                <li><i class="fas fa-code icon"></i>Ngôn ngữ lập trình: Ruby, C++, Javascript cơ bản</li>
-                <li><i class="fas fa-laptop-code icon"></i>Framework: Ruby on Rails</li>
-                <li><i class="fas fa-cloud icon"></i>Công nghệ web: Stripe API, OmniAuth</li>
-                <li><i class="fas fa-microchip icon"></i>Lập trình nhúng, Iot: C++</li>
-                <li><i class="fas fa-gamepad icon"></i>Lập trình game: SFML</li>
-                <li><i class="fas fa-database icon"></i>Cơ sở dữ liệu: PostgreSQL</li>
-                <li><i class="fas fa-users icon"></i>Kỹ năng mềm: Giao tiếp, tiếng anh cơ bản, giải quyết vấn đề.</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Kinh nghiệm làm việc</h2>
-            <h3>Dự án cá nhân</h3>
+        <div id="menu" class="menu">
+            <h2>Thực đơn đặc sắc</h2>
             <ul>
-                <li>Phát triển ứng dụng web sử dụng Ruby on Rails với Stripe API để xử lý thanh toán.</li>
-                <li>Triển khai OmniAuth để xác thực người dùng thông qua các mạng xã hội.</li>
-                <li>Hỗ trợ nhóm trong việc kiểm tra và sửa lỗi ứng dụng.</li>
-            </ul>
-            <ul>
-                <li><strong>Mô hình nhà thông minh</strong>: Lập trình C++ cho hệ thống nhúng điều khiển các thiết bị trong nhà, giúp tối ưu hóa việc sử dụng năng lượng.</li>
-                <li><strong>Máy sấy đồ tự động</strong>: Phát triển ứng dụng nhúng điều khiển máy sấy đồ, tích hợp cảm biến để tự động điều chỉnh nhiệt độ.</li>
-                <li><strong>Game với SFML</strong>: Phát triển game sử dụng SFML, tạo đồ họa và cơ chế chơi game hấp dẫn.</li>
-                <li><strong>Ứng dụng web quản lý thời gian</strong>: Phát triển ứng dụng web cho phép người dùng quản lý và theo dõi thời gian làm việc, sử dụng Ruby on Rails.</li>
+                <li>Phở bò truyền thống</li>
+                <li>Sushi Nhật Bản tinh tế</li>
+                <li>Bánh mì thịt nướng đặc biệt</li>
+                <li>Bò bít tết sốt tiêu xanh</li>
             </ul>
         </div>
-
-        <div class="section">
-            <h2>Học vấn</h2>
-            <h3>Đang là sinh viên năm 4</h3>
+        <div id="contact" class="contact">
+            <h2>Liên hệ với chúng tôi</h2>
+            <p><strong>Địa chỉ:</strong> 123 Đường Ẩm Thực, Thành phố Yêu Thương</p>
+            <p><strong>Số điện thoại:</strong> 0123 456 789</p>
+            <p><strong>Email:</strong> nhahang@example.com</p>
         </div>
-
-        <div class="section">
-            <h2>Học tập và Tự học</h2>
-            <p>Đã tự học và nghiên cứu các công nghệ qua sách chuyên ngành và tài liệu kỹ thuật. Một số nguồn tài liệu đáng chú ý bao gồm:</p>
-            <ul>
-                <li>Luyện thuật toán từ <a href="https://leetcode.com/">LeetCode</a></li>
-                <li>"Beginning Ruby: From Novice to Professional" của Andrew Hunt và David Thomas</li>
-                <li>"Ruby on Rails Tutorial Learn Web Development with Rails" Peter Cooper</li>
-                <li>Tài liệu về Arduino từ [https://www.arduino.cc]</li>
-                <li>Tài liệu chính thức về Ruby on Rails từ [https://rubyonrails.org](https://rubyonrails.org)</li>
-                <li>Tài liệu về SFML từ [https://www.sfml-dev.org](https://www.sfml-dev.org)</li>
-                <li>Các bài viết và tài liệu từ [GitHub](https://github.com) và [Stack Overflow](https://stackoverflow.com)</li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Sở thích</h2>
-            <ul>
-                <li><i class="fas fa-code-branch icon"></i>Tham gia các hoạt động lập trình mở, leetcode.</li>
-                <li><i class="fas fa-book icon"></i>Đọc sách về công nghệ mới và phát triển phần mềm.</li>
-                <li><i class="fas fa-gamepad icon"></i>Chơi game và phát triển trò chơi.</li>
-                <li><i class="fas fa-lightbulb icon"></i>Khám phá các công nghệ mới và thử nghiệm với các dự án cá nhân.</li>
-            </ul>
-        </div>
-    </div>
-
+    </section>
+    <footer>
+        <p>&copy; 2024 Nhà Hàng Tinh Hoa Ẩm Thực. Mọi quyền được bảo lưu.</p>
+    </footer>
 </body>
 </html>

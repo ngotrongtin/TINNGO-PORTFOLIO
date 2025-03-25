@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    border-bottom: 2px solid #2c3e50;
+    padding-bottom: 10px;
+}
+h2, h3 {
+    color: #2980b9;
+    margin-top: 20px;
+}
+p, li {
+    line-height: 1.6;
+}
+ul {
+    list-style-type: none; /* Xóa dấu chấm */
+    margin-left: 0;
+    padding-left: 0;
+}
+.contact-info {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-img {
+    border-radius: 1cap; /* Hình ảnh tròn */
+    width: 100px; /* Chiều rộng hình ảnh */
+    height: 100px; /* Chiều cao hình ảnh */
+    object-fit: cover; /* Đảm bảo hình ảnh không bị biến dạng */
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+.icon {
+    margin-right: 10px;
+    color: #2980b9;
+}
+.skills li {
+    display: flex;
+    align-items: center;
+}
+
+.presentation {
+    display: flex; /* Sử dụng Flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: start; /* Tạo khoảng cách giữa các phần tử */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới */
+    gap: 50px;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 20px;
+    margin-left: 40px; */
+    justify-content: center;
+    align-items: center;
+}
+.no-margin{
+    margin: 0px;
+}
